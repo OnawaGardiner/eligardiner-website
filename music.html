@@ -107,29 +107,29 @@
          <div><p>All creative content is the property of Eli Gardiner</p></div>
         <div><a href="#top">Back to Top</a></p></div>
   </footer>>
-  <script>
+    <script>
 
-  //script for html5 video play buttons
-  var vid=document.getElementById("vid1");
-  var playbtn=document.getElementById('playpausebt');
-  var seekslider=document.getElementById("seekslider");
+    //script for html5 video play buttons
+    var vid=document.getElementById("vid1");
+    var playbtn=document.getElementById('playpausebt');
+    var seekslider=document.getElementById("seekslider");
 
-  function playPause() {
-    if (vid.paused){
-      vid.play();}
-    else {
-      vid.pause();}
-  }
+    function playPause() {
+      if (vid.paused){
+        vid.play();}
+      else {
+        vid.pause();}
+    }
 
-  function setPlayer(){
-    playbtn.addEventListener("click", playPause,false);
-    seekslider.addEventListener("change", seekslider,false);
-  }
+    function setPlayer(){
+      playbtn.addEventListener("click", playPause,false);
+      seekslider.addEventListener("change", seekslider,false);
+    }
 
-  window.onload=setPlayer;
+    window.onload=setPlayer;
 
 
-  </script>
+    </script>
 
   </body>
 
