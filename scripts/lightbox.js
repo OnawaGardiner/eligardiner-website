@@ -8,7 +8,7 @@ if (window.innerWidth >= 1024){
     mask.style.height = window.outerHeight +window.pageYOffset + "px";
     mask.style.width = window.innerWidth  + "px";
     mask.style.background = "rgba(0,0,0,0.7)"
-    // background-image = url(.../andywarhol/)
+  )
     var populate = `
     <span id = "close" onclick = "Close()">X</span>
     <img id = "maskimage" src = ${imglink} alt = "illustration of many tomato soup can">
