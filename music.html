@@ -41,6 +41,8 @@ $(document).ready(function(){
 </script>
 </head>
 
+<body>
+
 <header id="top">
         <ul class="skip-links">
             <li><a href="#nav">Skip to navigation</a></li>
@@ -70,68 +72,35 @@ $(document).ready(function(){
             </ul>
             </a>
       </nav>
+
 </header>
-<body>
+
 <!--add skip to main navigation -->
-  <main id="main">
-      <div class="heading">
-          <h1> Discography </h1>
-      </div>
+<main id="main">
+  <script>
 
-       <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <img src="images/virginiarose_cover.jpg" alt="Virginia Rose Album Cover" style="width:300px;height:300px;">
-        </div>
-        <div class="flip-card-back">
-          <h1>Virginia Rose</h1>
-          <p>The Complete Album</p>
-          <p>2017</p>
-        </div>
-      </div>
-    </div>
+  //script for html5 video play buttons
+  var vid=document.getElementById("vid1");
+  var playbtn=document.getElementById('playpausebt');
+  var seekslider=document.getElementById("seekslider");
 
-    <div id="video-container">
-      <div class="vid-heading"><h2>Torn and Tattered</h2></div>
-      <div class="vid-content"><p>A new song from my upcoming album Fire and Medicine (coming soon)</p></div>
-      <video id="vid1">
-        <source src='video/tatteredandtorn.mp4' poster='images/video-torn.png'>
-      </video>
-      <div id='vid1-controls'>
-        <button id='playpausebt'>playPause</button>
-        <input id='seekslider' type='range' min="0" max="100" value="0" steps="1" aria-label="time">
-      </div>
-    </div>
-  </main>
-   <!-- footer -->
-   <footer>
-       <div><p>All creative content is the property of Eli Gardiner</p></div>
-      <div><a href="#top">Back to Top</a></p></div>
-   </footer>>
-<script>
+  function playPause() {
+    if (vid.paused){
+      vid.play();}
+    else {
+      vid.pause();}
+  }
 
-//script for html5 video play buttons
-var vid=document.getElementById("vid1");
-var playbtn=document.getElementById('playpausebt');
-var seekslider=document.getElementById("seekslider");
+  function setPlayer(){
+    playbtn.addEventListener("click", playPause,false);
+    seekslider.addEventListener("change", seekslider,false);
+  }
 
-function playPause() {
-  if (vid.paused){
-    vid.play();}
-  else {
-    vid.pause();}
-}
-
-function setPlayer(){
-  playbtn.addEventListener("click", playPause,false);
-  seekslider.addEventListener("change", seekslider,false);
-}
-
-window.onload=setPlayer;
+  window.onload=setPlayer;
 
 
-</script>
-
+  </script>
+</main>
 </body>
 
 </html>
