@@ -79,54 +79,31 @@ $(document).ready(function(){
       </div>
 
     <div class="gallery">
-            <a href="images/eatenalive-set.png" data-lightbox="photo-1" data-title="Live show of my song, Eaten Alive"><img
-                  src="images/eatenalive-set.png" alt="Photography - playing on stage"></a>
-            <a href="images/1.jpg" data-lightbox="photo-1" data-title="Playing guitar on the streets"><img
-                    src="images/1.jpg" alt="Photography - Playing guitar against brick wall"></a>
-            <a href="images/recording11.jpg" data-lightbox="photo-1" data-title="Recording in studio with electric guitar"><img
-                    src="images/recording11.jpg" alt="Photography - Recording while playing electric guitatr"></a>
-            <a href="images/playing7.jpg" data-lightbox="photo-1" data-title="Live show at brewery"><img
-                    src="images/playing7.jpg" alt="Photography - live show at brewery"></a>
-            <a href="images/songwriting.jpg" data-lightbox="photo-1" data-title="Tools for songwriting"><img
-                    src="images/songwriting.jpg" alt="Photography - notebook and guitar handle"></a>
-            <a href="images/2.jpg" data-lightbox="photo-1" data-title="Playing guitar on the streets"><img
-                    src="images/2.jpg" alt="Photography - Closeup playing guitar against brick wall"></a>
-            <a href="images/3.jpg" data-lightbox="photo-1" data-title="Playing in the park"><img
-                    src="images/3.jpg" alt="Photography - playing guitar on bench"></a>
-            <a href="images/4.jpg" data-lightbox="photo-1" data-title="Live taping in Richmond"><img
-                    src="images/4.jpg" alt="Photography - playing in electric guitar in front of graffiti"></a>
-            <a href="images/playing4.jpg" data-lightbox="photo-1" data-title="Live Show in Richmond"><img
-                  src="images/playing4.jpg" alt="Photography -  Live show in Richmond with two others"></a>
-            <a href="images/songwriting4.jpg" data-lightbox="photo-1" data-title="Tools of the trade"><img
-                  src="images/songwriting4.jpg" alt="Photography - notebook and acoustic guitar"></a>
-            <a href="images/recording2.jpg" data-lightbox="photo-1" data-title="Recording in progress"><img
-                  src="images/recording2.jpg" alt="Photography - recording with computer screens"></a>
-            <a href="images/playing10.jpg" data-lightbox="photo-1" data-title="Live show at night"><img
-                  src="images/playing10.jpg" alt="Photography - live show at night"></a>
-            <a href="images/7.jpg" data-lightbox="photo-1" data-title="Live show setup"><img
-                  src="images/7.jpg" alt="Photography - live show setup"></a>
-            <a href="images/6.jpg" data-lightbox="photo-1" data-title="Live show on stage"><img
-                  src="images/6.jpg" alt="Photography - live show on stage"></a>
-            <a href="images/playing11.jpg" data-lightbox="photo-1" data-title="Trying new guitar"><img
-                  src="images/playing11.jpg" alt="Photography - trying new guitar"></a>
-            <a href="images/openmic.jpg" data-lightbox="photo-1" data-title="Open mic night"><img
-                  src="images/openmic.jpg" alt="Photography - open mic night with friends"></a>
-            <a href="images/openmic3.jpg" data-lightbox="photo-1" data-title="Show with friends"><img
-                  src="images/openmic3.jpg" alt="Photography - show with friends"></a>
-          <a href="images/recording4.jpg" data-lightbox="photo-1" data-title="Recording vocals"><img
-                src="images/recording4.jpg" alt="Photography - recording vocals"></a>
-          <a href="images/songwriting3.jpg" data-lightbox="photo-1" data-title="Songwriting session"><img
-                src="images/songwriting3.jpg" alt="Photography - songwriting session"></a>
-          <a href="images/playing14.jpg" data-lightbox="photo-1" data-title="Solo electric show"><img
-                src="images/playing14.jpg" alt="Photography - playing solo with electric guitar"></a>
-          <a href="images/playing5.jpg" data-lightbox="photo-1" data-title="Jam session"><img
-                src="images/playing5.jpg" alt="Photography - acoustic jam session"></a>
-        <a href="images/playing2.jpg" data-lightbox="photo-1" data-title="Solo show"><img
-              src="images/playing2.jpg" alt="Photography - on stage for solo show"></a>
-        <a href="images/fireplaying.jpg" data-lightbox="photo-1" data-title="Playing by the bonfire"><img
-              src="images/fireplaying.jpg" alt="Photography - playing by the bonfire"></a>
-        <a href="images/profile_eli.jpg" data-lightbox="photo-1" data-title="Playing in the park"><img
-              src="images/profile_eli.jpg" alt="Photography - playing in the park"></a>
+      <div id='gallerymask'></div>
+            <div><img src="images/eatenalive-set.png" alt="Photography - playing on stage" onclick="CallOut(this)"></div>
+            <div><img src="images/1.jpg" alt="Photography - Playing guitar against brick wall" onclick="CallOut(this)"></div>
+            <div><img src="images/recording11.jpg" alt="Photography - Recording while playing electric guitatr" ></div>
+            <div><img src="images/playing7.jpg" alt="Photography - live show at brewery"></div>
+            <div><img src="images/songwriting.jpg" alt="Photography - notebook and guitar handle"></div>
+            <div><img src="images/2.jpg" alt="Photography - Closeup playing guitar against brick wall"></div>
+            <div><img src="images/3.jpg" alt="Photography - playing guitar on bench"></div>
+            <div><img src="images/4.jpg" alt="Photography - playing in electric guitar in front of graffiti"></div>
+            <div><img src="images/playing4.jpg" alt="Photography -  Live show in Richmond with two others"></div>
+            <div><img src="images/songwriting4.jpg" alt="Photography - notebook and acoustic guitar"></div>
+            <div><img src="images/recording2.jpg" alt="Photography - recording with computer screens"></div>
+            <div><img src="images/playing10.jpg" alt="Photography - live show at night"></div>
+            <div><img src="images/7.jpg" alt="Photography - live show setup"></div>
+            <div><img src="images/6.jpg" alt="Photography - live show on stage"></div>
+            <div><img src="images/playing11.jpg" alt="Photography - trying new guitar"></div>
+            <div><img src="images/openmic.jpg" alt="Photography - open mic night with friends"></div>
+            <div><img src="images/openmic3.jpg" alt="Photography - show with friends"></div>
+            <div><img src="images/recording4.jpg" alt="Photography - recording vocals"></div>
+            <div><img src="images/songwriting3.jpg" alt="Photography - songwriting session"></div>
+            <div><img src="images/playing14.jpg" alt="Photography - playing solo with electric guitar"></div>
+            <div><img src="images/playing5.jpg" alt="Photography - acoustic jam session"></div>
+            <div><img src="images/playing2.jpg" alt="Photography - on stage for solo show"></div>
+            <div><img src="images/fireplaying.jpg" alt="Photography - playing by the bonfire"></div>
+            <div><img src="images/profile_eli.jpg" alt="Photography - playing in the park"></div>
     </div>
 <script src="scripts/lightbox.js"></script>
  </main>
@@ -145,7 +122,7 @@ $(document).ready(function(){
   function qqqscroll(){
   if (window.pageYOffset >= dis){
       nav.classList.add("mymain-nav-scrolled")}}
-  
+
 
 
 

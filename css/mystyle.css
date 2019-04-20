@@ -382,6 +382,20 @@ nav ul li a {
 }
 
 
+#gallerymask {
+  position: absolute;
+  background-color: #404B5A;
+  opacity: 80;
+}
+
+#gallerymask #close {
+  position: absolute;
+  font-size: 5em;
+  background-color: #fff;
+  width: 60px;
+}
+
+
 /* Music page: HTML5 videos added - referenced w3, edutech wiki, and web crunch to understand js. The flip card container done with code from w3schools then changed so it would fit*/
 #video-container {
     width: 650px;
